@@ -1,6 +1,6 @@
 # RAWG Video Games
 
-_SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume datos de [RAWG Video Games API](https://rawg.io/). _
+_SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume datos de [RAWG Video Games API](https://rawg.io/)._
 
 #### Base de datos
 
