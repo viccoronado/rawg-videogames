@@ -6,14 +6,14 @@ _SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume d
 
 _El modelo de la base de datos tiene las siguientes entidades:_
 
-- [x] Videojuego con las siguientes propiedades:
+- [x] __Videojuego con las siguientes propiedades:__
   - ID
   - Nombre 
   - Descripción 
   - Fecha de lanzamiento
   - Rating
   - Plataformas 
-- [x] Género con las siguientes propiedades:
+- [x] __Género con las siguientes propiedades:__
   - ID
   - Nombre
 
