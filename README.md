@@ -4,7 +4,7 @@ _SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume d
 
 #### Base de datos 🔑
 
-El modelo de la base de datos tiene las siguientes entidades:
+_El modelo de la base de datos tiene las siguientes entidades:_
 
 - [x] Videojuego con las siguientes propiedades:
   - ID
@@ -17,11 +17,11 @@ El modelo de la base de datos tiene las siguientes entidades:
   - ID
   - Nombre
 
-La relación entre ambas entidades es de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultáneo y, a su vez, un género puede contener múltiples videojuegos distintos. 
+_La relación entre ambas entidades es de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultáneo y, a su vez, un género puede contener múltiples videojuegos distintos._
 
 #### Backend ⚙
 
-Servidor desarrollado en Node/Express con las siguientes rutas:
+_Servidor desarrollado en Node/Express con las siguientes rutas:_
 
 - [x] __GET /videogames__:
   - Obtiene un listado de los primeros 15 videojuegos
