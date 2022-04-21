@@ -7,12 +7,12 @@ _SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume d
 El modelo de la base de datos tiene las siguientes entidades:
 
 - [ ] Videojuego con las siguientes propiedades:
-  - ID: * No coincide con el ID de un videojuego ya existente en la API RAWG
-  - Nombre *
-  - Descripción *
+  - ID
+  - Nombre 
+  - Descripción 
   - Fecha de lanzamiento
   - Rating
-  - Plataformas *
+  - Plataformas 
 - [ ] Género con las siguientes propiedades:
   - ID
   - Nombre
@@ -22,8 +22,6 @@ La relación entre ambas entidades es de muchos a muchos ya que un videojuego pu
 #### Backend
 
 Servidor desarrollado en Node/Express con las siguientes rutas:
-
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
 
 - [ ] __GET /videogames__:
   - Obtiene un listado de los primeros 15 videojuegos
