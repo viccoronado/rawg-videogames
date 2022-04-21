@@ -2,11 +2,11 @@
 
 _SPA desarrollada con React, Redux, NodeJS, Sequelize y PostgreSQL que consume datos de [RAWG Video Games API](https://rawg.io/)._
 
-#### Base de datos
+#### Base de datos 🔑
 
 El modelo de la base de datos tiene las siguientes entidades:
 
-- [ ] Videojuego con las siguientes propiedades:
+- [x] Videojuego con las siguientes propiedades:
   - ID
   - Nombre 
   - Descripción 
@@ -19,7 +19,7 @@ El modelo de la base de datos tiene las siguientes entidades:
 
 La relación entre ambas entidades es de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultáneo y, a su vez, un género puede contener múltiples videojuegos distintos. 
 
-#### Backend
+#### Backend ⚙
 
 Servidor desarrollado en Node/Express con las siguientes rutas:
 
