@@ -1,10 +1,8 @@
-// Importar todos los routers
 const { Router } = require("express");
-//const { APIKEY } = process.env;
-const APIKEY = "9d5be115ecb6458db68b5cc2a529dc8d";
-const router = Router();
+const { APIKEY } = process.env;
 const fetch = require("node-fetch");
 const { Videogame, Genre } = require("../db.js");
+const router = Router();
 
 //Obtiene el detalle de un videojuego en particular, trae sólo los datos pedidos en la ruta de
 //detalle de videojuego e incluye los géneros asociados
@@ -19,17 +17,17 @@ router.get("/:id", async function (req, res) {
     fetch(`https://api.rawg.io/api/games/${id}?key=${APIKEY}`)
       .then((response) => response.json())
       .then((data) => {
-        let C = data;
+        let videogame = data;
         const information = {
-          name: C.name,
-          image: C.background_image,
-          genres: C.genres,
-          description: C.description_raw,
-          released: C.released,
-          rating: C.rating,
+          name: videogame.name,
+          image: videogame.background_image,
+          genres: videogame.genres,
+          description: videogame.description_raw,
+          released: videogame.released,
+          rating: videogame.rating,
           platforms:
-            C.platforms &&
-            C.platforms
+          videogame.platforms &&
+          videogame.platforms
               .map((p) => p.platform.name)
               .filter((p) => p != null)
               .join(", "),

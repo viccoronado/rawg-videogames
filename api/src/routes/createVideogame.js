@@ -1,7 +1,7 @@
 // Importar todos los routers
 const { Router } = require("express");
-const router = Router();
 const { Videogame, Genre } = require("../db.js");
+const router = Router();
 
 //Recibe los datos recolectados desde el formulario controlado de la ruta de creación de videojuego por body.
 //Crea un videojuego en la base de datos
