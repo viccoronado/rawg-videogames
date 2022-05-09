@@ -1,16 +1,14 @@
-// Importar todos los routers
 const fetch = require("node-fetch");
 const { Router } = require("express");
 const { Genre } = require("../db.js");
 const { APIKEY } = process.env;
-const { URL } = process.env;
 const router = Router();
 
-//Obtiene todos los tipos de géneros de videojuegos posibles. En una primera instancia los trae desde rawg
+//Obtiene todos los tipos de géneros de videojuegos posibles. En una primera instancia los trae desde RAWG
 //y los guarda en la base de datos para luego utilizarlos desde allí
 router.get("/", function (req, res) {
   let genresOfGames = [];
-  fetch(`${process.env.URL}${process.env.APIKEY}`, {
+  fetch(`https://api.rawg.io/api/genres${process.env.APIKEY}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

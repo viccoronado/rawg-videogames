@@ -1,9 +1,9 @@
 const { Router } = require("express");
-const videogame = require("./videogameDetail");
-const homeVideogames = require("./videogamesToShow");
-const videogames = require("./videogamesToShow");
-const videogameDetail = require("./videogamesToShow");
-const genreRouter = require("./genres");
+const videogame = require("./getVideogameDetail");
+const homeVideogames = require("./getVideogamesToShow");
+const videogames = require("./getVideogamesToShow");
+const videogameDetail = require("./getVideogamesToShow");
+const genreRouter = require("./getGenres");
 const createVideogame = require("./createVideogame");
 
 const router = Router();
